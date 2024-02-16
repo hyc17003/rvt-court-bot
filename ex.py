@@ -50,7 +50,7 @@ async def next_booking(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(booking_info) 
 
 async def check_routine(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    target_date = datetime.now() + timedelta(days=3)
+    target_date = datetime.now() + timedelta(days=2)
     target_date_str = target_date.strftime("%Y-%m-%d")
     booking = await fetch_next_booking()
 
@@ -77,7 +77,7 @@ async def make_poll_button_handler(update: Update, context: CallbackContext) -> 
     await query.answer()
     # can replace with callback_data
     if query.data == "make_poll":
-        target_date = datetime.now() + timedelta(days=3)
+        target_date = datetime.now() + timedelta(days=2)
         target_date_str = target_date.strftime("%Y-%m-%d")
         booking = await fetch_next_booking()
 
