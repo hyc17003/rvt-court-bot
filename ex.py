@@ -49,10 +49,6 @@ async def next_booking(update: Update, context: ContextTypes.DEFAULT_TYPE):
     booking_info = await fetch_next_booking()
     await update.message.reply_text(booking_info) 
 
-async def make_poll(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    chat_id = update.effective_chat.id
-    question = "Tennis tonight"
-
 async def check_routine(update: Update, context: ContextTypes.DEFAULT_TYPE):
     target_date = datetime.now() + timedelta(days=3)
     target_date_str = target_date.strftime("%Y-%m-%d")
