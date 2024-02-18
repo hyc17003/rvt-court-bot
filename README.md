@@ -5,7 +5,7 @@ A Telegram Bot designed for the RV Tennis community, RVT Court Bot facilitates e
 ## Commands
 1. **/start**: Welcomes the user and outlines the bot's capabilities.
 2. **/next**: Retrieves and displays upcoming tennis court bookings for RV Tennis, including dates, venues, and time slots for the next week, starting from today.
-3. **/check_routine**: Check for court availability two days ahead. If courts are available, it sends a message with the booking details and an option to "Make Poll". Clicking this button generates a poll with the court details and standard response options for user interaction.
+3. **/check_routine**: Checks for court availability two days ahead. If courts are available, it sends a message with the booking details and an option to "Make Poll". Clicking this button generates a poll with the court details and standard response options for user interaction.
 
 ## Quick Start
 1. **Setup:**
